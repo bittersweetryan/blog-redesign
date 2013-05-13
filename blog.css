@@ -67,6 +67,38 @@ a{
    border-bottom: 7px solid #ff5800;
    position: absolute;
    bottom: -10px;
-   left: 20px;
+   left: 22px;
 }
 
+.posts{
+    margin: 10px 50px;
+}
+
+.posts .date{
+    float: right;
+    padding: 10px 0;
+}
+
+.posts .title{
+    font-size: 1.5em;
+    padding: 10px 0;
+}
+
+.posts .content{
+    line-height: 1.5em;
+    color: rgb(60, 60, 60);
+}
+
+.sub-content{
+    text-align:center;
+    position: relative;
+    padding: 20px 0;
+    background-color: rgb( 44, 44, 44);
+}
+
+.sub-section{
+    display: inline-block;
+    padding: 10px;
+    border: 1px dashed #ccc;
+    
+}

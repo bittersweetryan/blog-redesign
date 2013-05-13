@@ -15,7 +15,6 @@ header{
     text-align: center;
 }
 
-
 header h1.masthead{
     font-size: 4em;
     margin: 0;
@@ -24,7 +23,6 @@ header h1.masthead{
     
 }
 
-
 header h4.masthead{
     padding: 0;
     margin: 0;
@@ -32,11 +30,11 @@ header h4.masthead{
     text-transform:uppercase;
 }
 
-
 nav{
     border-top: 1px dashed #CCC;
     border-bottom: 1px dashed #CCC; 
-    text-align: center;   
+    text-align: center; 
+    position: relative;  
 }
 
 nav ul{
@@ -47,5 +45,27 @@ nav ul{
 
 nav ul li{
     display: inline;
-    padding: 10px;
+    padding: 0 15px;
+    position: relative;
 }
+
+.link{
+    position: relative;
+    display: inline-block;
+}
+
+a{
+    text-decoration:none;
+    color: #ff5800;
+}
+
+.indicator{
+   width: 0px;
+   height: 0px;
+   border-left: 7px solid transparent;
+   border-right: 7px solid transparent;
+   border-bottom: 7px solid #ff5800;
+   position: absolute;
+   bottom: -10px;
+}
+

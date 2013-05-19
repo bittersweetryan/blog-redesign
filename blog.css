@@ -70,23 +70,41 @@ a{
    left: 22px;
 }
 
+.post{
+    margin-bottom: 20px;
+}
+
 .posts{
     margin: 10px 50px;
 }
 
-.posts .date{
+.posts time{
     float: right;
-    padding: 10px 0;
+    padding: 5px 0;
+    clear: both;
 }
 
-.posts .title{
+.posts h1{
     font-size: 1.5em;
     padding: 10px 0;
+    display: inline;
 }
 
-.posts .content{
+.posts header{
+    text-align:left;
+    margin: 0 0 10px 0;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.post.content{
     line-height: 1.5em;
     color: rgb(60, 60, 60);
+}
+
+.copyright{
+    color: #fff;
+    padding: 10px 0;
+    font-weight: normal;
 }
 
 .sub-content{
@@ -94,11 +112,45 @@ a{
     position: relative;
     padding: 20px 0;
     background-color: rgb( 44, 44, 44);
+    background-image: url( 'debut_dark.png');
+    height: auto;
 }
 
 .sub-section{
     display: inline-block;
     padding: 10px;
     border: 1px dashed #ccc;
-    
+    border-radius: 8px;
+    height: 150px;
+    vertical-align: top;
+    background-repeat:repeat;
+}
+
+.sub-section img{
+    max-height: 130px;
+}
+
+.content{
+    position: relative;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: block;
+    overflow: auto;
+    position: relative;align-content:
+}
+
+.read-more{
+    float: right;
+    clear: both;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
 }

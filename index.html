@@ -23,7 +23,7 @@
                             Blog
                         </div>
                     </a>
-                     <div class="indicator"></div>
+                     <div class="indicator current"></div>
                 </li>
                 <li><a href="#"><div class="link">Projects</div></a></li>
                 <li><a href="#"><div class="link">Speaking</div></a></li>
@@ -73,5 +73,25 @@
             </div>
         </section>
     </div>
+    <script>
+        ( function(){
+            var ele = document.createElement( 'div' ),
+                links = document.querySelectorAll( '.link' );
+
+            links = Array.prototype.slice.call( links );
+            
+            ele.className = 'indicator hover bounce';
+            
+            var hover = function( e ){
+                console.log( this );
+                this.appendChild( ele );
+            };
+            
+            links.forEach( function( item ){
+                item.addEventListener( 'mouseover', hover );
+            } );
+            
+        }());
+    </script>
 </body>
 </html>

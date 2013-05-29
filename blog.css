@@ -52,6 +52,7 @@ nav ul li{
 .link{
     position: relative;
     display: inline-block;
+    cursor: pointer;
 }
 
 a{
@@ -62,12 +63,38 @@ a{
 .indicator{
    width: 0px;
    height: 0px;
-   border-left: 7px solid transparent;
-   border-right: 7px solid transparent;
-   border-bottom: 7px solid #ff5800;
    position: absolute;
    bottom: -10px;
    left: 22px;
+}
+
+.indicator.current{
+   border-left: 7px solid transparent;
+   border-right: 7px solid transparent;
+   border-bottom: 7px solid #ff5800;
+}
+
+.indicator.hover{
+   border-left: 7px solid transparent;
+   border-right: 7px solid transparent;
+   border-bottom: 7px solid #CCC;
+}
+
+.bounce{
+    -webkit-animation-name: bounce;
+    -moz-animation-name   : bounce;
+    -ms-animation-name    : bounce;
+    -o-animation-name     : bounce;
+    animation-name        : bounce;    
+}
+
+@-webkit-keyframes bounce{
+    50%{
+        -webkit-transform: translateY( 10px );  
+    }
+    100%{
+        -webkit-transform: translateY( 0px );
+    }
 }
 
 .post{
@@ -139,7 +166,9 @@ a{
     width: 100%;
     display: block;
     overflow: auto;
-    position: relative;align-content:
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .read-more{
